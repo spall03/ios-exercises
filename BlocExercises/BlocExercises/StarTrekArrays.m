@@ -32,9 +32,9 @@
     BOOL worfIsPresent = NO;
     
     NSPredicate *containsWorf = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] 'Worf'"];
-    [characterArray filteredArrayUsingPredicate:containsWorf];
+    NSArray *testArray = [characterArray filteredArrayUsingPredicate:containsWorf];
     
-    if (characterArray.count > 0)
+    if (testArray.count > 0)
     {
         worfIsPresent = YES;
     }
