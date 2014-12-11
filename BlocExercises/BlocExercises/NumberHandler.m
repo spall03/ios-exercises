@@ -13,7 +13,7 @@
 - (NSNumber *) numberThatIsTwiceAsBigAsNumber:(NSNumber *)number {
     
     NSInteger unboxednumber = [number integerValue]; //get the int out of the NSNumber
-    NSNumber *result = [NSNumber numberWithInt:(unboxednumber*2)]; //do the math and wrap it again
+    NSNumber *result = [NSNumber numberWithInteger:(unboxednumber*2)]; //do the math and wrap it again
     
     return result;
 }
@@ -37,7 +37,7 @@
     
     for (NSInteger i = smaller; i <= bigger; i++) //must handle equal numbers
     {
-        NSNumber *temp = [NSNumber numberWithInt:i];
+        NSNumber *temp = [NSNumber numberWithInteger:i];
         [result addObject:temp];
     }
     
